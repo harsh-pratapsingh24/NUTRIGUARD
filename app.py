@@ -85,32 +85,8 @@ if st.button("🔍 Analyze Picture"):
                 st.error(f"An error occurred: {e}")
 
 # Footer warning
-.social-links {
-  display: flex;
-  gap: 20px;
-}
-
-.logo {
-  width: 50px;
-  height: 50px;
-  transition: transform 0.3s;
-}
-
-.logo:hover {
-  transform: scale(1.1);
-}
 st.markdown("---")
 st.info("⚠️ NutriGuard uses AI and may occasionally provide inaccurate or estimated results. Always consult a professional for medical or dietary advice.")
 if st.button("📬 Contact Us"):
     st.markdown("[Visit my GitHub Profile](https://github.com/harsh-pratapsingh24)", unsafe_allow_html=True)
     st.markdown("[Visit my LinkedIn Profile](https://www.linkedin.com/in/harshpratapsingh333/)", unsafe_allow_html=True)
-<div class="social-links">
-  <!-- GitHub -->
-  <a href="https://github.com/harsh-pratapsingh24" target="_blank">
-    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" class="logo">
-  </a>
-  <!-- LinkedIn -->
-  <a href="https://www.linkedin.com/in/yourprofile/" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" class="logo">
-  </a>
-</div>
