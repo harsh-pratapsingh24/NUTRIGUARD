@@ -79,3 +79,5 @@ if st.button("🔍 Analyze Picture"):
 # Footer warning
 st.markdown("---")
 st.info("⚠️ NutriGuard uses AI and may occasionally provide inaccurate or estimated results. Always consult a professional for medical or dietary advice.")
+if st.button("📬 Contact Us"):
+    st.markdown("[Visit my GitHub Profile](https://github.com/harsh-pratapsingh24)", unsafe_allow_html=True)
