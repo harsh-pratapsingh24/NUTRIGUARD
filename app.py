@@ -72,6 +72,14 @@ if st.button("🔍 Analyze Picture"):
 
                 with st.expander("📄 View Nutritional Analysis"):
                     st.write(response)
+                    
+                # Add a button to download the analysis as a .txt file
+                st.download_button(
+                    label="📥 Download Nutritional Analysis",
+                    data=response,
+                    file_name="nutritional_analysis.txt",
+                    mime="text/plain"
+                )
 
             except Exception as e:
                 st.error(f"An error occurred: {e}")
