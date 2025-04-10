@@ -75,7 +75,7 @@ if st.button("🔍 Analyze Picture"):
 
                 # 🎯 Show a download button (outside expander is better UX)
                 st.download_button(
-                    label="📥 Download Analysis as .txt",
+                    label="📥 Download Analysis",
                     data=gemini_response,
                     file_name="nutritional_analysis.txt",
                     mime="text/plain"
