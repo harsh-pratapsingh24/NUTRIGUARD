@@ -72,14 +72,6 @@ if st.button("🔍 Analyze Picture"):
 
                 with st.expander("📄 View Nutritional Analysis"):
                     st.write(response)
-                    
-                # Add a button to download the analysis as a .txt file
-                st.download_button(
-                    label="📥 Download Nutritional Analysis",
-                    data=response,
-                    file_name="nutritional_analysis.txt",
-                    mime="text/plain"
-                )
 
             except Exception as e:
                 st.error(f"An error occurred: {e}")
@@ -87,6 +79,20 @@ if st.button("🔍 Analyze Picture"):
 # Footer warning
 st.markdown("---")
 st.info("⚠️ NutriGuard uses AI and may occasionally provide inaccurate or estimated results. Always consult a professional for medical or dietary advice.")
-if st.button("📬 Contact Us"):
-    st.markdown("[Visit my GitHub Profile](https://github.com/harsh-pratapsingh24)", unsafe_allow_html=True)
-    st.markdown("[Visit my LinkedIn Profile](https://www.linkedin.com/in/harshpratapsingh333/)", unsafe_allow_html=True)
+# Smaller heading
+st.markdown("#### 📬 Contact Us")
+
+# Clickable smaller logos
+st.markdown(
+    """
+    <div style="display: flex; gap: 15px; align-items: center;">
+        <a href="https://github.com/harsh-pratapsingh24" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="30" height="30">
+        </a>
+        <a href="https://www.linkedin.com/in/harshpratapsingh333/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30" height="30">
+        </a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
