@@ -81,3 +81,5 @@ st.markdown("---")
 st.info("⚠️ NutriGuard uses AI and may occasionally provide inaccurate or estimated results. Always consult a professional for medical or dietary advice.")
 if st.button("📬 Contact Us"):
     st.markdown("[Visit my GitHub Profile](https://github.com/harsh-pratapsingh24)", unsafe_allow_html=True)
+    st.markdown("[Visit my LinkedIn Profile](https://www.linkedin.com/in/harshpratapsingh333/)", unsafe_allow_html=True)
+
