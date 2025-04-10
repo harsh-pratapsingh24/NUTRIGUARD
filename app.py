@@ -52,8 +52,8 @@ You are an expert nutritionist. Review the food items in the uploaded image and 
 2. Mention any disease risks associated with the identified food items.
 
 3. State whether the food is healthy overall.
-
-4. Suggest some healthy alternatives in the same format:
+4.Rate the product on a scale of 0 to 10 based on how healthy it is.
+5. Suggest some healthy alternatives in the same format:
    - Item - no of calories, protein
 """
 
