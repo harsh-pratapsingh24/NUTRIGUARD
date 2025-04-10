@@ -59,7 +59,6 @@ You are an expert nutritionist. Review the food items in the uploaded image and 
    - Item - no of calories, protein
 """
 
-# Analyze Button
 if st.button("🔍 Analyze Picture"):
     if uploaded_file is None:
         st.error("Please upload an image before analyzing.")
@@ -67,14 +66,24 @@ if st.button("🔍 Analyze Picture"):
         with st.spinner("Analyzing the food items..."):
             try:
                 image_data = input_image_setup(uploaded_file)
-                response = get_gemini_response(input_prompt, image_data)
+                gemini_response = get_gemini_response(input_prompt, image_data)
                 st.success("Analysis complete!")
 
+                # Show result in expander
                 with st.expander("📄 View Nutritional Analysis"):
-                    st.write(response)
+                    st.write(gemini_response)
+
+                # 🎯 Show a download button (outside expander is better UX)
+                st.download_button(
+                    label="📥 Download Analysis as .txt",
+                    data=gemini_response,
+                    file_name="nutritional_analysis.txt",
+                    mime="text/plain"
+                )
 
             except Exception as e:
                 st.error(f"An error occurred: {e}")
+
 
 # Footer warning
 st.markdown("---")
