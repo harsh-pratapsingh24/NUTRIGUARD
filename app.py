@@ -48,7 +48,10 @@ You are an expert nutritionist. Review the food items in the uploaded image and 
 1. A list of all food items with their estimated:
    - Calories
    - Protein content
-
+   - Starch Content
+   - Sugar Content
+   - MSG
+   
 2. Mention any disease risks associated with the identified food items.
 
 3. State whether the food is healthy overall.
